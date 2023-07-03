@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+ /* background-color: black;
+ color: #fff; */
+
+
+  /* Center and scale the image nicely */
+ 
+}
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #f6d365;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(246,211,101,0.5), rgba(253,160,133,0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(246,211,101,0.5), rgba(253,160,133,0.5))
+  }
+
+nav {
+    overflow: hidden;
+    position: relative;
+    transform: translateX(-300px);
+    height: 100%;
+    width: 400px;
+    transition: all 800ms cubic-bezier(.8, 0, .33, 1);
+    border-radius: 0% 0% 100% 50%;
+}
+
+nav.nav-open {
+    transform: translateX(0px);
+    border-radius: 0% 0% 0% 0%;
+   background: rgba(255, 255, 255, 0.6);
+}
+
+nav .menu-btn {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    padding: 0;
+    width: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+nav .menu-btn .line {
+    padding: 0;
+    width: 30px;
+    background: #fff;
+    height: 2px;
+    margin: 5px 0;
+    transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .menu-btn .line.line--1 {
+    width: 55px;
+    height: 8px;
+  
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--1.line-cross {
+    width: 60px;
+    transform: rotate(40deg) translateY(20px);
+   background: rgba(0,0,0,0.6);
+}
+
+nav .menu-btn .line.line--2 {
+    width: 55px;
+    height: 8px;
+ 
+    transform: translateX(0);
+}
+
+nav .menu-btn .line.line--2.line-fade-out {
+    width: 50px;
+    transform: translate(0px);
+    opacity: 0;
+}
+
+nav .menu-btn .line.line--3 {
+    width: 55px;
+    height: 8px;
+ 
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--3.line-cross {
+    width: 55px;
+    transform: rotate(-45deg) translateY(-16px);
+   background: rgba(0,0,0,0.6);
+}
+nav .nav-links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 900ms cubic-bezier(.9, 0, .33, 1);
+}
+
+
+nav .nav-links.fade-in {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+nav .nav-links .link {
+    margin: 20px 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: rgba(0,0,0,0.9);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.66rem;
+    transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .nav-links .link:hover {
+    color: rgba(0, 0, 0, .5);
+}
+
+
+.inform{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(206, 39, 39, 0.8);
+  font-size: 2rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+.support{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 10px;
+  display: flex;
+}
+a{
+  margin: 0 20px;
+  color: #fff;
+  font-size: 2rem;
+  transition: all 400ms ease;
+}
+
+a:hover{
+  color: #222;
+}
+
+.top-heading
+{
+    margin: auto;
+    position: absolute;
+    margin-left: 65%;
+}
+.top-heading1
+{
+    margin-top: 40%
+    
+}
+.bg-change{
+    background-image:url('https://source.unsplash.com/1600x900/?headphone');
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgb(228, 232, 236);
+}
+ul{
+    list-style: none;
+}
+.underline{
+    text-decoration: underline;
+  color: red;
+    list-style: none;
+    
+}
+
+.underline li a {
+    padding: 9px;
+}
+.margin
+{
+    margin-left: 15%;
+}
+.hover1:hover
+{
+    color: blue;
+}
+.section {
+    margin-top: 50px;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .item {
+    position: relative;
+    
+    border: 1px solid #333;
+    margin: 2%;
+    overflow: hidden;
+    
+  }
+  .item img {
+    max-width: 100%;
+    
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .item:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .bg-silver
+  {
+    background-color: rgb(249, 248, 247);
+  }
+  .bg-green
+  {
+    background-color: green;
+  }
+
+  .hover2:hover{
+    text-decoration: underline;
+  }

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../headphone/css/style.css">
+  <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+rel="stylesheet"
+/>
+  <title>Document</title>
+</head>
+<!-- <style>
+  
+#loading
+{
+    height: 100vh;
+    width: 100wh;
+    background: #fff url('https://cdn.dribbble.com/users/63485/screenshots/1309731/infinite-gif-preloader.gif')
+    no-repeat center ;
+    z-index: 99999;
+}
+</style> -->
+
+
+<body onload="myFuntion()">
+  <div id="loading"></div>
+  <div class=" bg-change gradient-custom">
+    <nav class="  fixed-top">
+
+      <div class="menu-btn  container">
+        <div class="line line--1 bg-dark"></div>
+        <div class="line line--2 bg-dark"></div>
+        <div class="line line--3 bg-dark "></div>
+      </div>
+
+      <div class="nav-links">
+        <a href="" class="link">Home</a>
+        <a href="" class="link">Contact</a>
+        <a href="" class="link">Profile</a>
+        <a href="" class="link">About</a>
+      </div>
+    </nav>
+
+    <div class=" top-heading ">
+      <p class=" display-4  fw-bolder top-heading1"> welcome to headphones website</p>
+      <p class="h4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, sed maiores debitis commodi
+        velit aspernatur quia a quo consequuntur praesentium nostrum ipsa dignissimos inventore ipsum, vero facilis!
+        Doloribus, dolore.</p>
+      <button class=" btn  btn-outline-secondary ">shop now</button>
+      <button onclick="myFunction()" class="btn btn-outline-danger">dark-mode</button>
+    </div>
+  </div>
+
+  <div class="  container mt-lg-5 ">
+    <div class="row">
+      <p class="  col-lg-12 display-4 text-center">Shop the world's best selection of</p>
+      <div class=" d-flex m-auto">
+        <p class=" display-3  fw-bolder text-decoration-underline  p-2 margin hover1">headphone</p>
+        <p class=" display-4 p-3">and</p>
+        <p class=" display-3 fw-bolder   text-decoration-underline p-3 hover1">home audio</p>
+      </div>
+      <div class="col-lg-12 d-flex text-center">
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class=" container mt-lg-5 mt-3 " >
+    <div class=" row">
+      <div class=" col-4" data-aos="flip-left"
+      data-aos-anchor-placement="bottom-bottom">
+        <div class="card text-center  shadow">
+          <p><i class="fa fa-address-book  pt-4  display-5" aria-hidden="true"></i></p>
+          <div class="card-body">
+            <p class="card-text">want an expert opinion.</p>
+            <hr>
+            <a href="#" class=" btn  btn-outline-primary text-dark">chat with one of our team</a>
+          </div>
+
+        </div>
+      </div>
+      <div class=" col-4" data-aos="flip-left"
+      data-aos-anchor-placement="bottom-bottom">
+        <div class="card text-center  shadow">
+          <p><i class="fa fa-address-book  pt-4  display-5 text-primary" aria-hidden="true"></i></p>
+          <div class="card-body">
+            <p class="card-text">want an expert opinion.</p>
+            <hr>
+            <a href="#" class=" btn  btn-outline-primary text-dark">chat with one of our team</a>
+          </div>
+
+        </div>
+      </div>
+      <div class=" col-4" data-aos="flip-left"
+      data-aos-anchor-placement="bottom-bottom">
+        <div class="card text-center  shadow">
+          <p><i class="fa fa-address-book  pt-4  display-5 text-danger" aria-hidden="true"></i></p>
+          <div class="card-body">
+            <p class="card-text">want an expert opinion.</p>
+            <hr>
+            <a href="#" class=" btn  btn-outline-primary text-dark">chat with one of our team</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- three image -->
+  <div class=" container-fluid  section" >
+    <div class="row">
+      <div class="col-4" >
+        <div class="item">
+          <img src="../headphone/image/image (1).jpg" alt="pepsi" class=" img-fluid">
+          
+          <div class="item-overlay top"></div>
+        </div>        
+       <h3 class="hover1 ms-2">Headphone <i class="fa-solid fa-arrow-right"></i></h3>
+      </div>
+      <div class="col-4" >
+        <div class="item">
+          <img src="../headphone/image/image (2).jpg" alt="pepsi" class=" img-fluid">
+          
+          <div class="item-overlay top"></div>
+        </div>        
+       <h3 class="hover1 ms-2">Headphone <i class="fa-solid fa-arrow-right"></i></h3>
+      </div>
+      <div class="col-4" >
+        <div class="item">
+          <img src="../headphone/image/image (3).jpg" alt="pepsi" class=" img-fluid">
+          
+          <div class="item-overlay top"></div>
+        </div>        
+       <h3 class="hover1 ms-2">Headphone <i class="fa-solid fa-arrow-right"></i></h3>
+      </div>
+
+    </div>
+  </div>
+  <br><br>
+
+  <!-- focal card-->
+  <div class="row  rounded-2 mt-5">
+ <div class=" col-6" 
+ data-aos-anchor-placement="bottom-center"><img src="../headphone/image/image (5).jpg" alt="" class=" img-fluid h"></div>
+ <div class="col-6" 
+ data-aos-anchor-placement="bottom-center">
+  
+  <div class=" m-auto   mt-5" style="padding: 9rem!important;">
+    <p class=" h1 display-3  fw-bolder text-center">20% Off Focal Bathys</p>
+    <p class="  fw-bolder  text-center">Save 20% for the on the Focal Bathys from March 20th - 26th!
+
+    </p>
+<p class="   text-center">Enjoy sound immersion and freedom of movement with Focal's first wireless Active Noise Cancelling headphones with pure Hi-Fi sound. These Bathys headphones will enhance your everyday and everywhere.
+
+</p>
+<button class=" btn btn-dark  p-3" style="margin-left: 18rem; ">Shop Now</button>
+  </div>
+
+ </div>
+
+  </div>
+  <!-- carosal -->
+  <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel ">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <div class=" row">
+          <div class=" col-3"><img src="../headphone/image/carosal (1).jpg" alt="" class=" img-fluid w-100 h-100">
+            <hr>
+            <h3>price-450</h3>
+          </div>
+          <div class=" col-3"><img src="../headphone/image/carosal (2).jpg" alt="" class=" img-fluid  w-100 h-100"></div>
+      
+          <div class=" col-3"><img src="../headphone/image/carosal (3).jpg" alt="" class=" img-fluid w-100 h-100"></div>
+      
+          <div class=" col-3"><img src="../headphone/image/carosal (4).jpg" alt="" class=" img-fluid w-100 h-100"></div>
+      
+        </div>      </div>
+      <div class="carousel-item">
+    
+  <div class=" row">
+    <div class=" col-3"><img src="../headphone/image/carosal (5).jpg" alt="" class=" img-fluid w-100 h-100"></div>
+    <div class=" col-3"><img src="../headphone/image/carosal (6).jpg" alt="" class=" img-fluid w-100 h-100"></div>
+
+    <div class=" col-3"><img src="../headphone/image/carosal (7).jpg" alt="" class=" img-fluid w-100 h-100"></div>
+
+    <div class=" col-3"><img src="../headphone/image/carosal (8).jpg" alt="" class=" img-fluid w-100 h-100"></div>
+
+  </div>
+      </div>
+      <div class="carousel-item">
+   
+  <div class=" row">
+    <div class=" col-3"><img src="../headphone/image/carosal (9).jpg" alt="" class=" img-fluid"></div>
+    <div class=" col-3"><img src="../headphone/image/carosal (16).jpg" alt="" class=" img-fluid"></div>
+
+    <div class=" col-3"><img src="../headphone/image/carosal (11).jpg" alt="" class=" img-fluid"></div>
+
+    <div class=" col-3"><img src="../headphone/image/carosal (13).jpg" alt="" class=" img-fluid h-100 "></div>
+
+  </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class=" mt-5 container-fluid bg-silver" data-aos="fade-up"
+  data-aos-anchor-placement="center-bottom">
+    <p class=" text-center  display-6">Thousands of 5-star reviews on Trustpilot make us the most trusted</p>
+    <p class=" text-center  display-6"> place to buy headphones and home audio on the internet.
+    </p>
+         <div class=" d-flex   col-12" style="margin-left: 20%;">   
+          <p  class=" text-center p-3">Our customers say</p>
+          <p class="h5  fw-bolder p-3">Excellent</p><p>
+          <i class="fa-regular fa-star bg-green p-3"></i>
+          <i class="fa-regular fa-star bg-green p-3"></i>
+        
+          <i class="fa-regular fa-star bg-green p-3"></i>
+        
+          <i class="fa-regular fa-star bg-green p-3"></i>
+          <i class="fa-regular fa-star bg-green p-3"></i>
+        
+        </p>
+          <p class="p-3">4.9 out of 5 based on 2,831 reviews</p>
+          <p class=""><i class="fa-regular fa-star p-3"></i></p>
+          <p class="p-3">Trustpilot</p>
+        </div> 
+  </div>
+ 
+ <!-- focal card-->
+ <div class="row   mt-5" data-aos="fade-up"
+ data-aos-anchor-placement="center-bottom">
+  <div class="col-6">
+   
+    <div class=" m-auto   mt-5" style="padding: 9rem!important;">
+      <p class=" h1 display-3  fw-bolder text-center">20% Off Focal Bathys</p>
+      <p class="  fw-bolder  text-center">Save 20% for the on the Focal Bathys from March 20th - 26th!
+  
+      </p>
+  <p class="   text-center">Enjoy sound immersion and freedom of movement with Focal's first wireless Active Noise Cancelling headphones with pure Hi-Fi sound. These Bathys headphones will enhance your everyday and everywhere.
+  
+  </p>
+  <button class=" btn btn-dark  p-3" style="margin-left: 18rem; ">Shop Now</button>
+    </div>
+  
+   </div>
+  <div class=" col-6">
+    <img src="../headphone/image/image (6).jpg" alt="" class=" img-fluid h">
+  </div>
+ 
+ 
+   </div>
+ 
+  
+     <!-- focal card-->
+  <div class="row  rounded-2 mt-5" data-aos=""
+  data-aos-anchor-placement="center-bottom">
+    <div class=" col-6"><img src="../headphone/image/image (4).jpg" alt="" class=" img-fluid h"></div>
+    <div class="col-6">
+     
+     <div class=" m-auto   mt-5" style="padding: 9rem!important;">
+       <p class=" h1 display-3  fw-bolder text-center">20% Off Focal Bathys</p>
+       <p class="  fw-bolder  text-center">Save 20% for the on the Focal Bathys from March 20th - 26th!
+   
+       </p>
+   <p class="   text-center">Enjoy sound immersion and freedom of movement with Focal's first wireless Active Noise Cancelling headphones with pure Hi-Fi sound. These Bathys headphones will enhance your everyday and everywhere.
+   
+   </p>
+   <button class=" btn btn-dark  p-3" style="margin-left: 18rem; ">Shop Now</button>
+     </div>
+   
+    </div>
+   
+     </div>
+   
+  
+  <div class=" mt-5 container-fluid bg-silver" data-aos="flip-left">
+    <p class=" text-center  fw-bolder display-6">Honest & Unfiltered Reviews From the Experts
+    </p>
+    <p class=" text-center  display-6"> Our expert reviewers give you the latest information on premium headphones.
+
+      .
+    </p>
+    </div>
+ 
+    <div class=" " style="margin-left: 30%;">
+      <button class=" btn btn-dark  p-3" style="margin-left: 18rem; " >view all</button>
+    </div>
+ <hr>
+<!-- footer -->
+
+<footer data-aos=""
+data-aos-anchor-placement="bottom-bottom">
+  <div class="row">
+    <div class="col-4">
+    <ul>      <li><p class=" fw-bolder text-capitalize">sign up our newsletter</p></li>
+
+      
+     <li>      <p>Be the first to get notified about upcoming products, deals and giveaways.</p>
+     </li>   
+     <li><input type="email" class="font-control" placeholder="Email"></li>   
+    </ul>
+    </div>
+    <div class="col-3"><ul>
+      <li><p class=" fw-bolder">SUPPORT</p></li>
+      <li><p class=" hover2">365-day return</p></li>
+      <li><p class=" hover2">Track your order</p></li>
+      <li><p class=" hover2">Shipping policy</p></li>
+      <li><p class=" hover2">Refund policy</p></li>
+      <li><p class=" hover2">FAQ</p></li>
+      <li><p class=" hover2">Contact Us</p></li>
+
+
+
+    </ul></div>
+    <div class="col-3"><ul>
+      <li><p class=" fw-bolder">OUR COMPANY</p></li>
+      <li><p class=" hover2">About Us</p></li>
+      <li><p class=" hover2">The Headphone community</p></li>
+      <li><p class=" hover2">Buy Headphones Help A Child Hear</p></li>
+      <li><p class=" hover2">Terms of Service</p></li>
+      <li><p class=" hover2">privacy policy</p></li>
+      <li><p class=" hover2">accessibility statement </p></li>
+      <li><p class=" hover2">buy office headsets</p></li>
+
+
+
+
+    </ul></div>
+    <div class="col-2"><ul>
+      <li><p class=" fw-bolder">SUPPORT</p></li>
+      <li><p class=" hover2">Focal</p></li>
+      <li><p class=" hover2">sennheiser</p></li>
+      <li><p class=" hover2">audeze</p></li>
+      <li><p class=" hover2">64 audio</p></li>
+      <li><p class=" hover2">hifiman</p></li>
+      <li><p class=" hover2">meze audio </p></li>
+      <li><p class=" hover2">buy office headsets</p></li>
+
+
+
+    </ul></div>
+  </div>
+</footer>
+<script>
+  function myFunction() {
+        document.body.style.backgroundColor = 'black';
+        document.body.style.Color = 'white';
+
+  
+  }
+  </script>
+
+  <script>
+    var menuBtn = document.querySelector('.menu-btn');
+    var nav = document.querySelector('nav');
+    var lineOne = document.querySelector('nav .menu-btn .line--1');
+    var lineTwo = document.querySelector('nav .menu-btn .line--2');
+    var lineThree = document.querySelector('nav .menu-btn .line--3');
+    var link = document.querySelector('nav .nav-links');
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('nav-open');
+      lineOne.classList.toggle('line-cross');
+      lineTwo.classList.toggle('line-fade-out');
+      lineThree.classList.toggle('line-cross');
+      link.classList.toggle('fade-in');
+    })
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    var preloader = document.getElementById('loading');
+
+    function  myFuntion() {
+      preloader.style.display = 'none';
+
+    }
+  </script>
+  <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"
+></script>
+</body>
+
+</html>
